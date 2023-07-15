@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     // default moving speed for players
     [SerializeField] private float moveSpeed = 12f;
+    [SerializeField] private float jumpHeight = 2f;
     // controller reference for the player movement
     [SerializeField] private CharacterController controller;
     // falling physics 
@@ -40,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
         // actual movement
         Vector3 moveDir = transform.right * x + transform.forward * z;
         controller.Move(moveDir * moveSpeed * Time.deltaTime);
+        // Jump Check
+        if(Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
         // gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
