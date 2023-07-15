@@ -291,7 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e307043ce841b4982899d7aa948559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 12
+  moveSpeed: 10
+  jumpHeight: 3
   controller: {fileID: 598858605}
   velocity: {x: 0, y: 0, z: 0}
   gravity: -19.62
@@ -591,15 +592,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3601834792827072035, guid: a5e62c59f811bdb4d9ea0fb473266a17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: 11.82
       objectReference: {fileID: 0}
     - target: {fileID: 3601834792827072035, guid: a5e62c59f811bdb4d9ea0fb473266a17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.19
+      value: 41.31
       objectReference: {fileID: 0}
     - target: {fileID: 3601834792827072035, guid: a5e62c59f811bdb4d9ea0fb473266a17, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.32
+      value: -20.47
       objectReference: {fileID: 0}
     - target: {fileID: 3601834792827072035, guid: a5e62c59f811bdb4d9ea0fb473266a17, type: 3}
       propertyPath: m_LocalRotation.w
