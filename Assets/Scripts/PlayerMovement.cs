@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // default moving speed for players
-    [SerializeField] private float moveSpeed = 12f;
+    [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float jumpHeight = 2f;
     // controller reference for the player movement
     [SerializeField] private CharacterController controller;
     // falling physics 
     [SerializeField] private Vector3 velocity;
-    [SerializeField] private float gravity = -9.81f;
+    [SerializeField] private float gravity = -9.81f * 2;
     // Ground Checker
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundDistance = .4f;
